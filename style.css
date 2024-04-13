@@ -1,0 +1,130 @@
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2.heading-cl{
+    color: #821395c7;
+}
+.navbar-brand {
+    margin-right: auto; /* Pushes the brand/logo to the left */
+    color: #fff;
+}
+.navbar-nav {
+    margin-left: auto; /* Pushes the nav links to the right */
+    color: #fff;
+}
+.nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.banner {
+    background: linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, #821395c7 100%), url('./assets/canva-gradient-background.jpg') center center / cover no-repeat;
+    color: #fff; /* Set text color to white or any suitable color for contrast */
+}
+
+.banner-top{
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.banner-other{
+    padding-top: 70px; /* Adjust padding as needed */
+    padding-bottom: 70px; /* Adjust padding as needed */
+}
+
+.banner-container {
+    position: relative;
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the navbar is on top of other content */
+    
+}
+
+.navbar-toggler-icon {
+    color: #fff; /* Change this to the desired color */
+}
+
+.navbar-collapse.show {
+    background-color: #fff; /* Change this to the desired color */
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.banner-content {
+    text-align: left; /* Center align content */
+}
+
+.custom-button {
+    background-color: #0011ff; /* Red color */
+    color: #ffffff; /* White text */
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* width: calc(33.33% - 20px); */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1;
+  }
+  .card-content {
+    flex-grow: 1;
+  }
+
+  footer{
+    color: #fff;
+  }
+
+  @media (min-width: 992px) { 
+        .banner-area {
+            margin-top: 75px;
+        }
+        .banner-content { 
+            padding-top: 180px;
+        }
+        .about-img{
+            width: 100%;
+            height: 600px;
+        }
+    }
+
+  @media screen and (max-width: 768px) {
+    .about-img{
+        width: 100%;
+        height: 300px;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: #000000;
+    }
+    .nav-link {
+        color: #000000;
+    }
+
+  }
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+
